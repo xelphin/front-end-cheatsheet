@@ -6,6 +6,7 @@ Basic syntax cheatsheets for html and css written in markdown.
 ### HTML
 
 - **000**  [HTML Basics](html_basic.md)
+- **001**  [HTML Elements](html_elements.md)
 
 
 #### Credits

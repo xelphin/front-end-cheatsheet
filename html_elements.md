@@ -1,5 +1,11 @@
 # HTML Elements
 
+## Hierarchy
+
+Use ```div``` (block element)
+
+Inside text use ```span``` (inline element)
+
 ## Elements
 
 <details>

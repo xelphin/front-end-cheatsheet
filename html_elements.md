@@ -123,6 +123,13 @@ Inside text use ```span``` (inline element)
 
 </details>
 
+<details>
+        <summary>Button</summary>
+
+```html
+<button class="button-class">button</button>
+```
+</details>
 
 <details>
 <summary>Images</summary>

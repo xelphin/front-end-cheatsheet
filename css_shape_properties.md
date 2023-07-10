@@ -68,3 +68,20 @@ display: block;             /* start at on same line */
 display: inline-block;      /* like inline, but with margins/padding like block */
 ```
 
+## Border Box
+Margins and paddings add to the dimensions of a shape. These make the shape bigger, so orignal width/height aren't true. With 'border-box' it adjusts the size so that the original width/height (space taken by element) stays true. 
+```css
+box-sizing: border-box;
+```
+
+## Visibility
+```css
+opacity: 0.8; /* Between 0 and 1 */
+```
+
+
+## Shadow
+
+```css
+box-shadow: 10px 10px 5px chocolate;
+```

@@ -1,5 +1,5 @@
-# HTML & CSS Cheatsheets
-Basic syntax cheatsheets for html and css written in markdown.
+# HTML, CSS and JS Cheatsheets
+Basic syntax cheatsheets for html, css and js written in markdown.
 
 ## Index
 
@@ -21,6 +21,7 @@ Basic syntax cheatsheets for html and css written in markdown.
 ### JS
 - **000**  [JS Basic](js_basic.md)
 - **001**  [JS Object](js_object.md)
+- **002**  [JS Functions](js_functions.md)
 
 
 #### Credits
@@ -29,5 +30,6 @@ Basic syntax cheatsheets for html and css written in markdown.
 - Also used the internet in general
 
 ### TODO
-- Media Queries
-- Images
+- Media Queries (css)
+- Images (css)
+- JS (generally)

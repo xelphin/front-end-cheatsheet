@@ -66,7 +66,7 @@ console.log(obj);// Object { foo: "bar", baz: 42 }
 
 ```
 
-## Unidefined
+## Undefined
 ```js
 //Undefined
 console.log( object2.interest === undefined)// true,

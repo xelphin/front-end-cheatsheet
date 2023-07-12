@@ -17,6 +17,12 @@ Basic syntax cheatsheets for html and css written in markdown.
 - **004**  [CSS Positioning](css_positioning.md)
 - **005**  [CSS Animation](css_animation.md)
 
+
+### JS
+- **000**  [JS Basic](js_basic.md)
+- **001**  [JS Object](js_object.md)
+
+
 #### Credits
 
 - Used a lot of info from https://www.theodinproject.com/

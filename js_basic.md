@@ -3,8 +3,9 @@
 ## Add to HTML
 
 ```html
-<script src="javascript.js"></script>
+<script src="javascript.js" defer></script>
 ```
+Add this inside of the `body` tag, at the bottom.
 
 ## Comments
 

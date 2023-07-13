@@ -22,8 +22,9 @@ Basic syntax cheatsheets for html, css and js written in markdown.
 - **000**  [JS Basic](js_basic.md)
 - **001**  [JS Object](js_object.md)
 - **002**  [JS Functions](js_functions.md)
-- **002**  [JS Arrays](js_arrays.md)
-
+- **003**  [JS Arrays](js_arrays.md)
+- **004**  [JS DOM](js_dom.md)
+- **005**  [JS Events](js_events.md)
 
 #### Credits
 

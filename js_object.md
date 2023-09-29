@@ -40,6 +40,13 @@ console.log("likes birds?",object2["likes birds"]) //true
 console.log("name:",object2.name) //John
 ```
 
+## Key Existance
+```js
+let user = { name: "John", age: 30 };
+let ageExists = ("age" in user); // true
+
+```
+
 ## Change Entries
 ```js
 //Change Entry
@@ -51,6 +58,30 @@ object2["car"]="Mercedes"
 
 //Delete Entry
 delete object2.age;
+
+```
+
+## Property value shorthand
+```js
+function makeUser(name, age) {
+  return {
+    name: name,
+    age: age,
+    // ...other properties
+  };
+}
+
+let user = makeUser("John", 30);
+
+// Can become this ->
+
+function makeUser(name, age) {
+  return {
+    name, // same as name: name
+    age,  // same as age: age
+    // ...
+  };
+}
 
 ```
 

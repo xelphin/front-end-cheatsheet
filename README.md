@@ -18,6 +18,8 @@ Basic syntax cheatsheets for html, css and js written in markdown.
 - **003**  [CSS Shape Properties](css_shape_properties.md)
 - **004**  [CSS Positioning](css_positioning.md)
 - **005**  [CSS Animation](css_animation.md)
+- **006**  [CSS Functions](css_functions.md)
+
 
 - Cheatsheet: https://htmlcheatsheet.com/css/
 

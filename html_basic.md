@@ -38,3 +38,9 @@ Linux:
 
 3. You can use the terminal to open the file in your browser. Navigate to the directory containing the file and **type google-chrome index.html**
 
+
+## Using Emmet
+
+https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-emmet
+
+Documentation: https://docs.emmet.io/cheat-sheet/

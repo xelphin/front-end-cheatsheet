@@ -85,3 +85,28 @@ opacity: 0.8; /* Between 0 and 1 */
 ```css
 box-shadow: 10px 10px 5px chocolate;
 ```
+
+## Border
+
+```css
+h1 {
+  border: 4mm ridge rgba(211, 220, 50, .6);
+  border-radius: 50% 20% / 10% 40%;
+}
+```
+
+## Overflow
+
+```css
+h1 {
+  overflow: visible; /* hidden | clip | scroll | auto */
+}
+```
+
+## Opacity
+
+```css
+h1 {
+  opacity: 0.33;
+}
+```

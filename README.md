@@ -8,6 +8,8 @@ Basic syntax cheatsheets for html, css and js written in markdown.
 - **000**  [HTML Basics](html_basic.md)
 - **001**  [HTML Elements](html_elements.md)
 
+- Elements: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+
 ### CSS
 
 - **000**  [CSS Basic](css_basic.md)
@@ -17,6 +19,7 @@ Basic syntax cheatsheets for html, css and js written in markdown.
 - **004**  [CSS Positioning](css_positioning.md)
 - **005**  [CSS Animation](css_animation.md)
 
+- Cheatsheet: https://htmlcheatsheet.com/css/
 
 ### JS
 - **000**  [JS Basic](js_basic.md)

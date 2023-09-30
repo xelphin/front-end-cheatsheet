@@ -7,6 +7,7 @@ Basic syntax cheatsheets for html, css and js written in markdown.
 
 - **000**  [HTML Basics](html_basic.md)
 - **001**  [HTML Elements](html_elements.md)
+- **002**  [HTML Forms](html_forms.md)
 
 - Elements: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 
@@ -42,3 +43,15 @@ Basic syntax cheatsheets for html, css and js written in markdown.
 - Media Queries (css)
 - Images (css)
 - JS (generally)
+
+#### Frameworks
+- Bootstrap
+- Tailwind
+
+#### Preprocessors
+- Sass (+Live Sass Compiler – A VSCode Extension)
+- (Less)
+Advantages: https://medium.com/@LiliOuakninFelsen/what-is-a-css-pre-processor-why-should-you-use-one-ac3d4cd4b2c2
+
+
+Styled Components

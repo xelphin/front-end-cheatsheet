@@ -44,3 +44,7 @@ Linux:
 https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-emmet
 
 Documentation: https://docs.emmet.io/cheat-sheet/
+
+## Browser Compatibility
+
+Check if you can use something across browsers: https://caniuse.com/ciu/index

@@ -116,3 +116,7 @@ body {
             #eee 35% url("../../media/examples/lizard.png");
 }
 ```
+
+## Browser Compatibility
+
+Check if you can use something across browsers: https://caniuse.com/ciu/index

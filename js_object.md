@@ -120,3 +120,45 @@ const copy = { ...original, c: 3 }; // copy => { a: 1, b: 2, c: 3 }
 
 const { a, ...theRest } = copy; // theRest => { b: 2, c: 3 }
 ```
+
+## Call Functions Through Objects
+
+### Method 1
+```js
+function add (a,b) {
+    return a+b;
+}
+// ...
+
+const evaluateOperation = {
+    "+": add,
+    "-": subtract,
+    "*": multiply,
+    "/": divide
+}
+```
+
+And then you call it like so:
+
+```js
+evaluateOperation["+"](12, 4);
+```
+
+### Method 2
+In case you want to control arguments
+
+```js
+function setOperation(symbol) {
+    // ...
+}
+
+const addSymbol = {
+    "+": function() { setOperation("+"); }
+    // ...
+};
+```
+And then you call it like so:
+
+```js
+addSymbol["+"]();
+```

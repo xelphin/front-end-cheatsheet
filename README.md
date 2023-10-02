@@ -21,6 +21,7 @@ Basic syntax cheatsheets for html, css and js written in markdown.
 - **005**  [CSS Animation](css_animation.md)
 - **006**  [CSS Functions](css_functions.md)
 - **007**  [CSS Costum Properties](css_costum_properties.md)
+- **008**  [CSS Grid](css_grid.md)
 
 
 - Cheatsheet: https://htmlcheatsheet.com/css/

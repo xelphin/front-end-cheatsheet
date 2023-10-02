@@ -16,7 +16,7 @@
             <input type="tel" name="" id="form_phone" placeholder="phone number">
             <br>
             <p>Below is 'textarea':</p>
-            <textarea name="" id="form_description" cols="30" rows="5">This is a 'textarea' tag </textarea>
+            <textarea name="" id="form_description" cols="30" rows="5" minlength="5" maxlength="20">This is a 'textarea' tag </textarea>
             <br>
             <p>Below is 'input' with type 'radio':</p>
             <input type="radio" name="color" id="" value="gold">Gold 
@@ -39,6 +39,11 @@
               <input id="dark" type="radio" name="light-dark" value="dark">dark
             </label>
             <br>
+            <div>
+                <label for="quantity">Quantity</label>
+            </div>
+            <input type="number" id="quantity" name="quantity" min="1" value="0">
+            <div>
             <!--Select+Option-->
             <p>Below is 'select' and in it 'option'</p>
             <select name="type" id="">
@@ -62,6 +67,11 @@
             <label for="input1">Enter a date:</label>
             <input type="date" id="input1" name="input1">
             <br>
+            <div>
+                <label for="zip_code">Postal / Zip Code:</label>
+            </div>
+
+            <input type="text" id="zip_code" name="zip_code" pattern="(\d{5}([\-]\d{4})?)" required>
             <br>
             <button type="submit">Submit</button>
           </form>
@@ -84,7 +94,7 @@
     <input type="tel" name="" id="form_phone" placeholder="phone number">
     <br>
     <p>Below is 'textarea':</p>
-    <textarea name="" id="form_description" cols="30" rows="5">This is a 'textarea' tag </textarea>
+    <textarea name="" id="form_description" cols="30" rows="5" minlength="5" maxlength="20">This is a 'textarea' tag </textarea>
     <br>
     <p>Below is 'input' with type 'radio':</p>
     <input type="radio" name="color" id="" value="gold">Gold 
@@ -107,6 +117,11 @@
         <input id="dark" type="radio" name="light-dark" value="dark">dark
     </label>
     <br>
+    <div>
+        <label for="quantity">Quantity</label>
+    </div>
+    <input type="number" id="quantity" name="quantity" min="1" value="0">
+    <div>
     <!--Select+Option-->
     <p>Below is 'select' and in it 'option'</p>
     <select name="type" id="">
@@ -130,6 +145,10 @@
     <label for="input1">Enter a date:</label>
     <input type="date" id="input1" name="input1">
     <br>
+    <div>
+        <label for="zip_code">Postal / Zip Code:</label>
+    </div>
+<input type="text" id="zip_code" name="zip_code" pattern="(\d{5}([\-]\d{4})?)" required>
     <br>
     <button type="submit">Submit</button>
     </form>
@@ -249,3 +268,43 @@ greetMeButton.addEventListener('click', (event) => {
 </details>
 
 
+## Styling Validations
+
+```css
+input {
+  border: 2px solid #000;
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+input:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgreen);
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}
+```
+
+## Regex
+
+For the ```pattern``` attribute
+
+
+- ```a``` — Matches one character that is a (not b, not aa, and so on).
+- ```abc``` — Matches a, followed by b, followed by c.
+- ```ab?c``` — Matches a, optionally followed by a single b, followed by c. (ac or abc)
+- ```ab*c``` — Matches a, optionally followed by any number of bs, followed by c. (ac, abc, abbbbbc, and so on).
+- ```a|b``` — Matches one character that is a or b.
+- ```abc|xyz``` — Matches exactly abc or exactly xyz (but not abcxyz or a or y, and so on).
+- ...
+
+Example:
+```html
+pattern="[Bb]anana|[Cc]herry"
+```

@@ -1,7 +1,12 @@
 # CSS Grid
 
+### Great Guide
+https://css-tricks.com/snippets/css/complete-guide-grid/
+
 ## General 
-HTML
+
+<details>
+<summary>General</summary>
 
 ```html
 <div class="container" id="<specific grid>">
@@ -15,6 +20,8 @@ HTML
 ```css
 .container{
     display: grid;
+    /* or */
+    display: inline-grid;
 }
 ```
 
@@ -428,5 +435,140 @@ main{
   </main>
   </body>
 </html>
+
+</details>
+
+## Create Grid
+
+```css
+.container {
+  display: grid;
+  /* 2 rows | 3 col*/
+  grid-template-rows: 50px 50px;
+  grid-template-columns: 50px 50px 50px;
+  /* or */
+  grid-template: 50px 50px / 50px 50px 50px;
+}
+```
+
+### Implicit
+```css
+grid-auto-rows: 30px;
+```
+If i have more elements than i can hold, they will go to the additional rows that will be ```30px``` in size
+
+### Grid-Gap
+```css
+row-gap: 20px;
+column-gap: 10px;
+```
+
+### Fractional Units
+
+```css
+grid-template-columns: 1fr 2fr 1fr;
+```
+1st and 3rd column: 1/4 of size
+2nd column: 2/4 of size
+
+
+
+## Positioning
+
+Choose placement of elements in grid
+
+<details>
+<summary>resize: both;</summary>
+allows the user to resize the container by clicking and dragging from the bottom right corner
+
+</details>
+<details>
+<summary>overflow: auto;</summary>
+enable scrolling if we resize the container to be smaller than our grid can accommodate
+
+</details>
+
+```css
+.container {
+  resize: both;
+  overflow: auto;
+  display: grid;
+  grid-template: 40px 40px  / 40px 40px 40px 40px;
+  /* Make 2 rows and 4 columns */
+}
+#living-room {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  /* spans first 3 columns and first 2 rows*/
+}
+#living-room {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  /* shorthand */
+}
+#living-room {
+  grid-area: 1 / 1 / 3 / 2;
+  /* or like this */
+}
+```
+
+## Template-Area
+
+```css
+.container {
+  display: grid;
+  grid-template: 40px 40px 40px 40px 40px / 40px 40px 40px 40px 40px; 
+  grid-template-areas:
+    "living-room living-room living-room living-room living-room"
+    "living-room living-room living-room living-room living-room"
+    "bedroom bedroom bathroom kitchen kitchen"
+    "bedroom bedroom bathroom kitchen kitchen"
+    "closet closet . . ."    
+}
+#living-room {
+   grid-area:  living-room;
+}
+/* ... */
+```
+("```.```" are used to indicate empty cells)
+
+## Repeat
+
+```css
+/* this */
+grid-template-columns: 150px 150px 150px 150px 150px;
+/* turns to */
+grid-template-columns: repeat(5, 150px);
+```
+
+## Min Max Clamp
+```css
+grid-template-rows: repeat(2, min(200px, 50%));
+grid-template-rows: repeat(2, max(200px, 50%));
+grid-template-rows: repeat(5, minmax(200px, 50%));
+```
+There's also clamp()
+```clamp(minimum-size, ideal-size, maximum-size)```
+
+## Auto-Fit and Auto-Fill
+
+### Auto-Fit
+If our grid is only 200px wide, we may only want one column. If it’s 400px wide, we may want two, and so on...
+```css
+display: grid;
+width: 1000px;
+grid-template-rows: repeat(2, 1fr);
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+```
+With minmax(), we can tell our grid that we want to have as many columns as possible, using the constraints of our minmax() function to determine each column’s size, without it overflowing our grid.
+
+### Auto-Fill
+When the grid is expanded to a size where another grid item could fit, but there aren’t any left, ```auto-fit``` will keep the grid items at their max size. Using ```auto-fill```, the grid items will snap back down to their min size once the space becomes available to add another grid item, even if there isn’t one to be rendered.
+
+
+
+
 
 

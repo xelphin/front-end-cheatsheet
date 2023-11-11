@@ -34,6 +34,7 @@ Basic syntax cheatsheets for html, css and js written in markdown.
 - **004**  [JS Arrays](js_004_arrays.md)
 - **005**  [JS DOM](js_005_dom.md)
 - **006**  [JS Events](js_006_events.md)
+- **007**  [JS Prototypes](js_007_prototype.md)
 
 #### Credits
 

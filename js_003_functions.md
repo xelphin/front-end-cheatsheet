@@ -63,22 +63,35 @@ myForEach(myArry, (item) => {
 ```
 
 ## CALL , APPLY , BIND
+
 ```js
-console.log("apply, bind:")
-let someObj = {
-    myString: "Hello World!",
-    myFunc: function(){
-        return this.myString;
-    }
+let myObj = {
+    myObjStr: "Hello World!"
 };
-let anotherFunc = function(s){
-    return this.myString + s; //this.myString = "Hello World!"
+
+let someFunc = function(s){
+    return this.myObjStr + s; // Note the "this" keyword
 };
-console.log(anotherFunc.call(someObj, " And Hello Moon!"));
-anotherFunc.apply(someObj, [" And Hello Sun!"]); // = "Hello World! And Hello Sun!"
-let boundFunc = anotherFunc.bind(someObj);
-boundFunc(" And Hello Saturn!"); // = "Hello World! And Hello Saturn!"
-// //
+```
+
+### Call
+```js
+let text = someFunc.call(myObj, " And Hello Moon!");
+```
+
+###  Apply
+```js
+someFunc.apply(myObj, [" And Hello Sun!"]); 
+```
+
+### Bind
+
+```js
+let boundFunc = someFunc.bind(myObj);
+boundFunc(" And Hello Saturn!");
+```
+
+```js
 let product = function(a, b){ return a * b; };
 let doubler = product.bind(this, 2);
 doubler(8); // = 16
@@ -112,7 +125,7 @@ welcome(); //can only call after the function block
 function favoriteAnimal(animal) {
   console.log(animal + " is my favorite animal!")
 }
-favoriteAnimal('Goat')
+favoriteAnimal('Donkey')
 
 //Default Argument
 function showMessage(from, text = "no text given") {

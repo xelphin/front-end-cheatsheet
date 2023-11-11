@@ -5,35 +5,35 @@ Basic syntax cheatsheets for html, css and js written in markdown.
 
 ### HTML
 
-- **000**  [HTML Basics](html_basic.md)
-- **001**  [HTML Elements](html_elements.md)
-- **002**  [HTML Forms](html_forms.md)
+- **000**  [HTML Basics](html_000_basic.md)
+- **001**  [HTML Elements](html_001_elements.md)
+- **002**  [HTML Forms](html_002_forms.md)
 
 - Elements: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 
 ### CSS
 
-- **000**  [CSS Basic](css_basic.md)
-- **001**  [CSS Selectors](css_selectors.md)
-- **002**  [CSS Text Properties](css_text_properties.md)
-- **003**  [CSS Shape Properties](css_shape_properties.md)
-- **004**  [CSS Positioning](css_positioning.md)
-- **005**  [CSS Animation](css_animation.md)
-- **006**  [CSS Functions](css_functions.md)
-- **007**  [CSS Costum Properties](css_costum_properties.md)
-- **008**  [CSS Grid](css_grid.md)
+- **000**  [CSS Basic](css_000_basic.md)
+- **001**  [CSS Selectors](css_001_selectors.md)
+- **002**  [CSS Text Properties](css_002_text_properties.md)
+- **003**  [CSS Shape Properties](css_003_shape_properties.md)
+- **004**  [CSS Positioning](css_004_positioning.md)
+- **005**  [CSS Animation](css_005_animation.md)
+- **006**  [CSS Functions](css_006_functions.md)
+- **007**  [CSS Costum Properties](css_007_costum_properties.md)
+- **008**  [CSS Grid](css_008_grid.md)
 
 
 - Cheatsheet: https://htmlcheatsheet.com/css/
 
 ### JS
-- **000**  [JS Basic](js_basic.md)
-- **001**  [JS Object](js_object.md)
-- **002**  [JS Object Functions](js_object_functions.md)
-- **003**  [JS Functions](js_functions.md)
-- **004**  [JS Arrays](js_arrays.md)
-- **005**  [JS DOM](js_dom.md)
-- **006**  [JS Events](js_events.md)
+- **000**  [JS Basic](js_000_basic.md)
+- **001**  [JS Object](js_001_object.md)
+- **002**  [JS Object Functions](js_002_object_functions.md)
+- **003**  [JS Functions](js_003_functions.md)
+- **004**  [JS Arrays](js_004_arrays.md)
+- **005**  [JS DOM](js_005_dom.md)
+- **006**  [JS Events](js_006_events.md)
 
 #### Credits
 

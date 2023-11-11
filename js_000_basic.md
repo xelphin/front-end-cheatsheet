@@ -1,5 +1,8 @@
 # JS Basic
 
+### Good Resource
+https://learnxinyminutes.com/docs/javascript/
+
 ## Add to HTML
 
 ```html

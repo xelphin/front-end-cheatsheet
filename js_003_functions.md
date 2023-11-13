@@ -125,7 +125,7 @@ welcome(); //can only call after the function block
 function favoriteAnimal(animal) {
   console.log(animal + " is my favorite animal!")
 }
-favoriteAnimal('Donkey')
+favoriteAnimal('Donkey');
 
 //Default Argument
 function showMessage(from, text = "no text given") {

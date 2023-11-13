@@ -25,8 +25,8 @@ let images = document.body.getElementsByTagName("img");
 ## Query selector nodelist
 
 ```js
-element.querySelector(selector) // --returns reference to first match
-element.querySelectorAll(selectors) // --reference to all (nodelist)
+element.querySelector('.controls') // --returns reference to first match
+element.querySelectorAll('.controls') // --reference to all (nodelist)
 ```
 > this doesn't return an 'array'! It returns a 'nodelist'.
 > can use Array.from() or spread operator to use some array methods

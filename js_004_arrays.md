@@ -6,11 +6,9 @@ let person1 = [];
 let cars = ["Saab", "Volvo", "BMW"];
 let cars2 = new Array("Saab", "Volvo", "BMW");
 let points = new Array(40); // [ , , , , ,..., ] 40 empty spaces
-let person2 = {firstName:"John", lastName:"Doe", age:46};
 
 // Assign Array Value
 let name1 = cars[0];
-let name2= person2.firstName;
 ```
 
 ## Array Methods
@@ -21,7 +19,6 @@ let myArrayLength=cars.length;
 // METHODS
 // Sort
 let myArraySorted = cars.sort(); 
-person1["firstName"] = "John";
 // Type Of
 let isArray = Array.isArray(cars);
 // String

@@ -3,6 +3,11 @@ Basic syntax cheatsheets for html, css and js written in markdown.
 
 ## Index
 
+### Bash
+
+- **000**  [Bash Basics](bash_000_basic.md)
+- **001**  [VIM](bash_000_vim.md)
+
 ### HTML
 
 - **000**  [HTML Basics](html_000_basic.md)

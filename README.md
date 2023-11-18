@@ -40,7 +40,12 @@ Basic syntax cheatsheets for html, css and js written in markdown.
 - **005**  [JS DOM](js_005_dom.md)
 - **006**  [JS Events](js_006_events.md)
 - **007**  [JS Prototypes](js_007_prototype.md)
-- **008**  [JS Design Patterns](js_008_design_patterns.md)
+- **008**  [JS Object Constructors](js_009_object_constructors.md)
+- **009**  [JS Design Patterns](js_009_design_patterns.md)
+
+### Dev Environment
+
+- **000**  [Dev Environment About](dev_environment_000_about.md)
 
 #### Credits
 

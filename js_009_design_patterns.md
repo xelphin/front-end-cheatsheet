@@ -1,5 +1,7 @@
 # JS Design Patterns
 
+Good Source: https://www.patterns.dev/#patterns
+
 ## Object Constructors
 
 ```js
@@ -17,8 +19,6 @@ console.log(myPlayer.sayName); // 'My name is Alice'
 ```
 
 ## Factory Functions
-
-
 
 ```js
 function createUser (name) {
@@ -53,6 +53,29 @@ const User = function (name) {
 }
 ```
 </details>
+
+<details>
+<summary>About Closure</summary>
+
+```js
+  const counterCreator = () => {
+    let count = 0;
+    return () => {
+      console.log(count);
+      count++;
+    };
+  };
+  
+  const counter = counterCreator();
+  
+  counter(); // 0
+  counter(); // 1
+  counter(); // 2
+  counter(); // 3
+```
+</details>
+
+
 
 ### Inheritance
 
@@ -91,3 +114,36 @@ calculator.mul(14,5534); // 77476
 ```
 
 In this example, we have a factory function creating some basic operations that we need only once. We can wrap it in parentheses and immediately call it by adding `()` - returning the result object that we store in `calculator`. In this way we can write code, **wrapping away things that we do not need as private variables and functions** inside our factory function and while they are tucked inside of our module, we can use the returned variables and functions outside the factory, as necessary.
+
+#### Another Good Example
+
+```js
+const Formatter = (function() {
+  let timesRun = 0;
+
+  const log = (message) => console.log(`[${Date.now()}] Logger: ${message}`);
+  const setTimesRun = () => { 
+    log("Setting times run");
+    ++timesRun;
+  }
+
+  const makeUppercase = (text) => {
+    log("Making uppercase");
+    setTimesRun();
+    return text.toUpperCase();
+  };
+
+  const getTimesRun = () => {
+    return timesRun;
+  }
+
+  return {
+    makeUppercase,
+    getTimesRun,
+  }
+})();
+
+
+console.log(Formatter.makeUppercase("tomek"));
+console.log(Formatter.getTimesRun());
+```

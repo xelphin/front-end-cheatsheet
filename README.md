@@ -43,9 +43,13 @@ Basic syntax cheatsheets for html, css and js written in markdown.
 - **008**  [JS Object Constructors](js_009_object_constructors.md)
 - **009**  [JS Design Patterns](js_009_design_patterns.md)
 
+### JSON
+- **000**  [JSON Basics](json_000_basics.md)
+
 ### Dev Environment
 
 - **000**  [Dev Environment About](dev_environment_000_about.md)
+- **001**  [Dev Environment Additional](dev_environment_001_additional.md)
 
 #### Credits
 

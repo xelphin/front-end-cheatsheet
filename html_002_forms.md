@@ -308,3 +308,9 @@ Example:
 ```html
 pattern="[Bb]anana|[Cc]herry"
 ```
+
+## With Javascript
+
+https://www.w3schools.com/js/js_validation_api.asp
+
+https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation#validating_forms_using_javascript

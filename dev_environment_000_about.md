@@ -288,6 +288,8 @@ Transpiling code means converting the code in one language to code in another si
 
 Installing Babel (a node package)
 
+> Another guide, probably more recommended: https://github.com/babel/babel-loader
+
 `$ npm install @babel/core @babel/preset-env babel-loader --save-dev`
 
 > Note: We’re installing 3 separate packages as dev dependencies 
@@ -376,7 +378,7 @@ functionTwo(); // this should work as expected!
 
 1. Go to project directory and do:
 
-    - `$ npm init`
+    - `$ npm init -y`
 
 > It will generate a `package.json`
 
@@ -384,21 +386,20 @@ functionTwo(); // this should work as expected!
 
 3. Get webpack there:
 
-    - `$ npm init -y`
-
     - `$ npm install webpack webpack-cli --save-dev`
 
 4. Add a `.gitignore` file. And inside it write:
 ```
 node_modules
 ```
+When opening the project from git do `$ npm install` to reload the dependencies
 
 5. Create a `src` and `dist` directory
 
     - Create `src/index.js`
     - Create `dist/index.html`
 
-6. In `src/index.js` add `<script src="main.js"></script>` inside the `body` tag at the end
+6. In `dist/index.html` add `<script src="main.js"></script>` inside the `body` tag at the end
 
 7. Create a `webpack.config.js` in it write the following:
 
@@ -768,6 +769,29 @@ Instead of manually switching between modes in the configuration file as needed,
 
 > You’ll notice the above tutorial does not have a `webpack.config.js` file. If you do use `webpack-merge`, make sure that any webpack commands you run (including in an npm script) follow the tutorial and use the `--config` option to specify which webpack configuration file to use. If you do not specify one, webpack will try to look for `webpack.config.js` and if it does not find one, it will not be able to bundle correctly!
 
+## Github Pages
+
+Instructions: https://gist.github.com/cobyism/4730490
+
+So need to do:
+
+1. `git add dist && git commit -m "Initial dist subtree commit"`
+2. `git subtree push --prefix dist origin gh-pages`
+3. In `https://github.com/xelphin/<your repo name>/settings/pages` Go to branch and make the branch `gh-pages`
+
+### Make a Script
+
+Instead of having to do type out step (2) every time you want to push to pages, you can just add your own script to `package.json`
+
+```
+"scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "build": "webpack",
+  "pushToGitHubPages": "git subtree push --prefix dist origin gh-pages"
+},
+```
+
+I wrote `pushToGitHubPages` but you can have a different name. And then what's left to do is `$ npm run pushToGitHubPages`
 
 ## More on Webpack
 

@@ -58,6 +58,13 @@ Basic syntax cheatsheets for html, css and js written in markdown.
 - **000** [Git Basics](git_000_basics.md)
 - **001** [Git Deeper Look](git_001_deeper_look.md)
 
+### Jest
+
+- **000** [Jest Basics](jest_000_basics.md)
+- **001** [Jest Matchers](jest_001_matchers.md)
+- **002** [Jest Mocks](jest_002_mocks.md)
+
+
 #### Credits
 
 - Used a lot of info from https://www.theodinproject.com/

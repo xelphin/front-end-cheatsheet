@@ -11,6 +11,42 @@ transform: scale(1.5, 2);                   /* Size */
 transform: skew(20deg, 10deg);              /* Skew */
 transform: matrix(1, -0.3, 0, 1, 0, 0);     /* Skew */
 ```
+
+<details>
+<summary>variations</summary>
+
+#### Can select and axis
+```css
+transform: scaleX();
+transform: scaleY();
+transform: scale();
+```
+
+#### Multiple
+```css
+transform: rotate(45deg) translate(200%);
+```
+
+</details>
+
+### Perspective
+Creates a 3D effect
+
+https://css-tricks.com/how-css-perspective-works/
+
+```css
+transform: perspective(240px);
+```
+
+Also creates additional `transforms`:
+
+```css
+transform: rotateZ();
+transform: rotate3d();
+```
+
+`perspective-origin`: https://css-tricks.com/how-css-perspective-works/#aa-the-perspective-origin
+
 ## Transition
 
 ```css
@@ -32,6 +68,8 @@ transform: matrix(1, -0.3, 0, 1, 0, 0);     /* Skew */
   background-color: var(--orange);
 }
 ```
+
+> Usually, you should keep your animations to only affecting `opacity` and `transform` if you want absolute best performance for animations on your web page
 
 ## Animation
 

@@ -27,6 +27,7 @@ Basic syntax cheatsheets for html, css and js written in markdown.
 - **006**  [CSS Functions](css_006_functions.md)
 - **007**  [CSS Costum Properties](css_007_costum_properties.md)
 - **008**  [CSS Grid](css_008_grid.md)
+- **009**  [CSS Accessibility](css_009_accessibility.md)
 
 
 - Cheatsheet: https://htmlcheatsheet.com/css/

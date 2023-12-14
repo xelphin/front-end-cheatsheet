@@ -79,6 +79,7 @@ box-sizing: border-box;
 opacity: 0.8; /* Between 0 and 1 */
 ```
 
+> ❗ Give each individual item in that **hidden content** a **tabindex value of -1**
 
 ## Shadow
 

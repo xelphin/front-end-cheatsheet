@@ -35,7 +35,6 @@ Basic syntax cheatsheets for html, css and js written in markdown.
 - **009**  [CSS Accessibility](css_009_accessibility.md)
 - **010**  [CSS Responsiveness](css_010_responsiveness.md)
 
-
 - Cheatsheet: https://htmlcheatsheet.com/css/
 
 ### JS

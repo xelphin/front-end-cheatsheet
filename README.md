@@ -8,6 +8,11 @@ Basic syntax cheatsheets for html, css and js written in markdown.
 - **000**  [Bash Basics](bash_000_basic.md)
 - **001**  [VIM](bash_000_vim.md)
 
+### Git
+
+- **000** [Git Basics](git_000_basics.md)
+- **001** [Git Deeper Look](git_001_deeper_look.md)
+
 ### HTML
 
 - **000**  [HTML Basics](html_000_basic.md)
@@ -28,6 +33,7 @@ Basic syntax cheatsheets for html, css and js written in markdown.
 - **007**  [CSS Costum Properties](css_007_costum_properties.md)
 - **008**  [CSS Grid](css_008_grid.md)
 - **009**  [CSS Accessibility](css_009_accessibility.md)
+- **010**  [CSS Responsiveness](css_010_responsiveness.md)
 
 
 - Cheatsheet: https://htmlcheatsheet.com/css/
@@ -53,17 +59,18 @@ Basic syntax cheatsheets for html, css and js written in markdown.
 - **000**  [Dev Environment About](dev_environment_000_about.md)
 - **001**  [Dev Environment Additional](dev_environment_001_additional.md)
 
-
-### Git
-
-- **000** [Git Basics](git_000_basics.md)
-- **001** [Git Deeper Look](git_001_deeper_look.md)
-
 ### Jest
 
 - **000** [Jest Basics](jest_000_basics.md)
 - **001** [Jest Matchers](jest_001_matchers.md)
 - **002** [Jest Mocks](jest_002_mocks.md)
+
+### React
+
+- **000** [React Set Up](react_000_set_up.md)
+- **001** [React Components](react_001_components.md)
+- **002** [React State](react_002_state.md)
+- **003** [React Effects](react_003_effects.md)
 
 
 #### Credits

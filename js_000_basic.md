@@ -1,5 +1,12 @@
 # JS Basic
 
+#### Example Projects for Reference
+- https://github.com/xelphin/rock-paper-scissors-vanilla
+- https://github.com/xelphin/etch-a-sketch-vanilla
+- https://github.com/xelphin/calculator-vanilla
+- https://github.com/xelphin/tic-tac-toe-vanilla
+- https://github.com/xelphin/library-vanilla
+
 ### Good Resource
 https://learnxinyminutes.com/docs/javascript/
 

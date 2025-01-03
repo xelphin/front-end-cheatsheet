@@ -48,18 +48,26 @@ notes.forEach((item) => console.log(item)); //each time sends back (callback) a 
 
 ## Iterator Functions (Callbacks)
 ```js
-function myForEach(array, callback) {
+function myForEach(array, callback_func) {
   for (let i = 0; i < array.length -1; i++) {
-    callback(array[i]); // This is when the callback function gets called, or executed
-    //At each callback(), it returns to myForEach() a value
+    callback_func(array[i]); // This is when the callback function gets called, or executed
+    //At each callback_func(), it returns to myForEach() a value
   }
 }
 // You would call it like this:
 const myArry = [2, 3, 4, 2];
-myForEach(myArry, (item) => {
-  //'item' will always be a new value, for each callback() return we get
-  console.log(item + 2); 
-})
+myForEach(
+
+  // array
+  myArry,
+
+  // callback_func
+  (item) => {
+    //'item' will always be a new value, for each callback() return we get
+    console.log(item + 2); 
+  }
+
+)
 ```
 
 ## CALL , APPLY , BIND

@@ -1,5 +1,9 @@
 # HTML Basics
 
+#### Example Projects for Reference
+https://github.com/xelphin/vanilla-landing-page-wine
+
+
 ## Init HTML
 
 In VSCode, write "!" in a .html page and click enter for the boilerplate

@@ -2,6 +2,9 @@
 
 https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html
 
+#### Example Projects for Reference
+https://github.com/xelphin/webpack-demo
+
 ## NPM
 
 Node Package Manager
